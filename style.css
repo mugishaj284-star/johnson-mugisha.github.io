@@ -1,0 +1,78 @@
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image: url("images/mountains.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+.overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(5, 18, 55, 0.65);
+
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 900px;
+
+    padding: 100px 20px 50px;
+}
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 65px;
+    }
+
+    .intro {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .button {
+        width: 210px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 80px 25px;
+    }
+
+}
+
+
+
+
+
