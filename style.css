@@ -71,7 +71,30 @@
     }
 
 }
-
+.repo-feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.repo-card {
+    display: block;
+    padding: 1.5rem;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.repo-card:hover {
+    transform: translateY(-4px);
+    border-color: #d4af37;
+}
+.repo-card h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+.repo-card p { margin: 0 0 1rem; opacity: 0.8; font-size: 0.95rem; }
+.repo-meta { display: flex; gap: 1rem; font-size: 0.8rem; opacity: 0.7; }
+.repo-status { text-align: center; opacity: 0.7; grid-column: 1 / -1; }
 
 
 
